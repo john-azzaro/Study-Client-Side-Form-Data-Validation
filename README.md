@@ -1,7 +1,5 @@
 # Client-Side Form Validation Study
 
-<br>
-
 See it Live: https://john-azzaro.github.io/Study-Form-Data-Validation/
 
 <br>
@@ -26,7 +24,7 @@ Form validation is used for user submission sections contact forms and any place
 need to have a name and password entered to have the login register successfully.  Form validation is essential make sure data submitted is correct, ensure the user has adequate 
 protection by having name and passwords of a certian length, type, etc, and lastly for the saftey and security of your own application. 
 
-There are two different ways to validate form data: *client-side* and *server-side*.  Client-side validation in the browser before data is submitted to the server and has a few benefits, including quicker response and is more user-friendly.  Server-side validation, which occurs after the data has been submitted to the server.  Although server-side validation isnt as user friendly due to the delay in form submission, data can be validated and sanitized.  
+There are two different ways to validate form data: *client-side* and *server-side*.  **Client-side validation** in the browser before data is submitted to the server and has a few benefits, including quicker response and is more user-friendly.  **Server-side validation**, which occurs after the data has been submitted to the server.  Although server-side validation isnt as user friendly due to the delay in form submission, data can be validated and sanitized.  
 
 A good approach is to have a two-layer form data validation where basic error checking can be done on the client side and more complex validation done on the server side to cover all your bases.
 
@@ -35,11 +33,11 @@ A good approach is to have a two-layer form data validation where basic error ch
 ## How do you implement form data validation?
 In the study example, you have a basic form with a user name, password, and a submission button.  However, before going any further remember that HTML has the built-in input attribute ```required``` that specifies that the input field mist be filled out before submission.  You will have validation logic that will check the same thing, but it seems best to have multiple layers of security at no cost to performance.
 ```html
-    <form id="form" class="contact-form" action="/" method="GET">
+    <form id="form" action="/" method="GET">
         <label for="name">Name</label>
-        <input id="name" name="name" type="text" required>                <== "required" added to input tag
+        <input id="name" name="name" type="text" required>                    <== "required" added to input tag
         <label for="password">Password</label>
-        <input id="password" name="password" type="password" required>    <== "required" added to input tag
+        <input id="password" name="password" type="password" required>        <== "required" added to input tag
          <button type="submit">Submit</button>
     </form>
 ```
