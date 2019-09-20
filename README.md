@@ -30,11 +30,19 @@ There are two different ways to validate form data: *client-side* and *server-si
 
 A good approach is to have a two-layer form data validation where basic error checking can be done on the client side and more complex validation done on the server side to cover all your bases.
 
-
 <br>
 
 ## How do you implement form data validation?
-
+In the study example, you have a basic form with a user name, password, and a submission button.  However, before going any further remember that HTML has the built-in input attribute ```required``` that specifies that the input field mist be filled out before submission.  You will have validation logic that will check the same thing, but it seems best to have multiple layers of security at no cost to performance.
+```html
+    <form id="form" class="contact-form" action="/" method="GET">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>                <== "required" added to input tag
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required>    <== "required" added to input tag
+         <button type="submit">Submit</button>
+    </form>
+```
 
 
 
