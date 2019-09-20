@@ -10,22 +10,66 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
 </head>
-<body>
-    <div id='error'>                                                         <!-- Div for error message-->
 
-    </div>
-    <form action="/" method="GET">                                           <!-- Form with name and password with a submit button-->
-        <div>
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text">
+<body class="container full-height-grow">
+    <header class="main-header">                                                                  
+        <a href="/" class="brand-logo">                                                     
+            <img class="logo-resize" src="" alt="">
+            <div class="brand-logo-name">ExpressDevSite</div>
+        </a>
+        <a href="#" class="toggle-button">                                                                                    
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <nav class="main-nav">                                                                        
+            <ul>                                                                                 
+                <li>
+                    <a href="discover.html">Discover</a>
+                </li>                                                                           
+                <li>
+                    <a href="services.html">Services</a>
+                </li> 
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>                                                                           
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="contact-main-section">                                                       
+        <h1 class="contact-text">                                                                 
+            The        
+            <span class="accent-text">Contact</span>  
+            Page                                      
+        </h1>
+
+        <div id='error'>                                                         <!-- Div for error message-->
         </div>
-        <div>
-            <label for="password">Password</label>
-            <input id="password" name="password" type="password">
-        </div>
-        <button type="submit">Submit</button>
-    </form>
+
+        <form class="contact-form" action="/" method="GET">                                           <!-- Form with name and password with a submit button-->
+            <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+    </section>
+   
+
 
 
 </body>
+
+
+
+
+
+
 </html>
