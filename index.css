@@ -175,49 +175,6 @@ body {                                                                         /
                                                       
 }
 
-/*/ GLOBAL CIRCULAR DESIGN SHAPES /*/
-.home-page-circle-1 {                                                          /* For circles on home page: */
-    position: absolute;                                                            /* ... absolute positioning so that it is outside normal flow and can be offset... */ 
-    width: 28vw;                                                                   /* ... width to make shape... */ 
-    height: 28vw;                                                                  /* ... height to make shape (now we have a box)... */ 
-    border-radius: 50%;                                                            /* ... 50% border radius will make the box a circle... */ 
-    background-color: rgba(117, 111, 97, 0.22);                                   /* ... background color with a .1 (i.e. 10%) opacity... */ 
-    bottom: 5vw;                                                                   /* ... bottom > 5vw means its within 5% of the bottom of the screen... */ 
-    left: 5vw;                                                                     /* ... left > 5vw means it is within 5% of the left of the screen... */ 
-    z-index: -1;                                                                   /* ... when you set z-index to -1, you set it BEHIND everything else... */ 
-}
-
-.home-page-circle-2 {                                                         /* Same as circle-1, only different location, size, and color */
-    position: absolute;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50%;
-    background-color: rgba(109, 103, 50, 0.08);
-    top: 8vw;
-    left: 30vw;
-    z-index: -1;
-}
-
-/*/ DESIGN SHAPES WITH PSEUDO SELECTOR /*/
-.home-page-circle-3 {                                                                 /* For the circle ruleset, we are essentially deferring  */
-    position: absolute;                                                                     /* ... outside normal flow so it can be offset ... */
-    overflow: hidden;                                                                       /* ... hides the rest of the shape outside the viewing area ... */
-    width: 55vw;                                                                            /* ... circle dimensions ... */
-    height: 55vw;                                                                           /* ... circle dimensions ... */                                                   
-    bottom: 0px;                                                                            /*... Note that bottom and right are 0 so as to be as far down as possible...*/
-    right: 0;                                                                               /*... Note also that setting a negative value will place the circle even lower. */
-    z-index: -1;
-}
-.home-page-circle-3::before {                                                          /* This pseudo selector is where we set the content for the circle. */
-    content: '';                                                                            /*... setting content to empty so that something shows up...*/
-    transform: translate(40%, 40%);                                                         /*... translate handles the offset from the page 40% to the right and 40% down  ...*/
-    position: absolute;                                                                     /*... position is absolute inside the parent...*/
-    height: 100%;                                                                           /*... height is 100% of the parent...*/
-    width: 100%;                                                                            /*... width is 100% of the parent...*/
-    border-radius: 50%;                                                                     /*... make the orginal square into a circle...*/
-    background-color: rgba(117, 97, 97, 0.1);                                             /*... color with transparency at 10%...*/
-}
-
 .contact-main-section {                                              /* For entire contact page: */
     display: flex;                                                    /*... line everything up side by side ... */
     justify-content: space-between;                                   /* ... space everything out as far apart as they can (left from right)...  */
@@ -281,4 +238,8 @@ body {                                                                         /
 
 .input-group textarea:focus {
     border-color: rgb(214, 214, 214);
+}
+
+::placeholder {
+    color: rgb(194, 194, 194);
 }
