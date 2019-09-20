@@ -1,5 +1,9 @@
 # Form Data Validation Study
+
+<br>
+
 See it Live: https://john-azzaro.github.io/Study-Form-Data-Validation/
+
 <br>
 
 ## What is the Form Data Validation Study?
@@ -7,9 +11,24 @@ The Form Data Validation Study is a handy exploration of data verification of fo
 submit a name and a password.  Additional logic has been provided to make sure that the user submits a name and password that meet a certain criteria, such 
 as a length minimum/limit, whether or not a password or name is provided and, if not, needs to be provided to successfully submit.
 
+Here's some questions covered in the study:
+
+* [Why use form data validation?](#Screenshots)
+* [How do you implement form data validation?](#Screenshots)
 * [Does Form Validation Study feature commentary?](#Does-Form-Validation-Study-feature-commentary)
 * [What are the key features of the Form Validation Study?](#What-are-the-key-features-of-the-Form-Validation-Study)
 * [Screenshots](#Screenshots)
+
+<br>
+
+## Why use form data validation?
+
+<br>
+
+## How do you implement form data validation?
+
+
+
 
 <br>
 
