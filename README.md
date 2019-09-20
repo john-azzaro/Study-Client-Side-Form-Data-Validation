@@ -22,6 +22,11 @@ Here's some questions covered in the study:
 <br>
 
 ## Why use form data validation?
+Form validation is used for user submission sections contact forms and any place you need to submit data to check and see if the data is correct.  For example, you might
+need to have a name and password entered to have the login register successfully.  Form validation is essential make sure data submitted is correct, ensure the user has adequate 
+protection by having name and passwords of a certian length, type, etc, and lastly for the saftey and security of your own application. 
+
+
 
 <br>
 
