@@ -9,3 +9,8 @@ Additionally, you can add an error field if the validation fails.
 
 STEP 2: Add Logic for form validation
 =====================================
+This can be done two ways, with vanilla JavaScript and jQuery.
+
+For vanilla javascript
+======================
+1. Select inputs.
