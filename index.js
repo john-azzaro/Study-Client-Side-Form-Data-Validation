@@ -6,5 +6,8 @@ const form = docuemnt.getElementById('form');                       // select "f
 
 form.addEventListener('submit', function(event) {                        
     let messages = [];                                              // "messages" storing all the error messages for the form validation.
-    event.preventDefault()                                          // prevent page from submitting
+    if (name.value === '' || name.value == null) {                    // then check for errors... so if the name.value is equal to an empty string or null (usr didnt put in a password)
+        messages.push('Name is required')
+    }
+        event.preventDefault()                                          // prevent page from submitting
 });

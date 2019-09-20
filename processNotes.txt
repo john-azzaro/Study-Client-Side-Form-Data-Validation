@@ -14,5 +14,28 @@ This can be done two ways, with vanilla JavaScript and jQuery.
 For vanilla javascript
 ======================
 1. Select inputs (for form, name, and password)
+    ----------------------------------------------------------------------------------------------------
+    const name = document.getElementById('name');                       // select "name" element
+    const password = document.getElementById('password');               // select "password" element
+    const form = docuemnt.getElementById('form');                       // select "form" element   
+    ----------------------------------------------------------------------------------------------------
+
 2. To prevent form refreshing when you submit your form, you need to add an event listener with a event.preventDefault.
+    -------------------------------------------------------------------------------------------------------
+    form.addEventListener('submit', function(event) {                          
+        event.preventDefault()                                          // prevent page from submitting
+    });   
+    -------------------------------------------------------------------------------------------------------
+
+3. Then, create a variable called "messages" with an array which will store all our messages for the validation process.
+    --------------------------------------------------------------------------------------------------------
+    form.addEventListener('submit', function(event) {                        
+    let messages = [];                                                   // "messages" storing all the error messages for the form validation.  
+    event.preventDefault()  
+    });
+    --------------------------------------------------------------------------------------------------------
+
+4. Then you need to add you if/else statements to check for the errors!  
+
+    
    
