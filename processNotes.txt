@@ -13,4 +13,6 @@ This can be done two ways, with vanilla JavaScript and jQuery.
 
 For vanilla javascript
 ======================
-1. Select inputs.
+1. Select inputs (for form, name, and password)
+2. To prevent form refreshing when you submit your form, you need to add an event listener with a event.preventDefault.
+   
