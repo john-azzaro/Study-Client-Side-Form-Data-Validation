@@ -34,7 +34,7 @@ A good approach is to have a two-layer form data validation where basic error ch
 
 <br>
 
-## How do you implement form data validation?
+## How do you implement client-side form data validation?
 In the study example, you have a basic form with a user name, password, and a submission button.  However, before going any further remember that HTML has the built-in input attribute ```required``` that specifies that the input field mist be filled out before submission.  You will have validation logic that will check the same thing, but it seems best to have multiple layers of security at no cost to performance.
 ```html
     <form id="form" action="/" method="GET">
@@ -94,13 +94,13 @@ For additional error checking, all you need to do is add additional if statement
 
 <br>
 
-## Does Form Validation Study feature commentary?
+## Does Client-Side Form Validation Study feature commentary?
 Yes! Commentary be found in html, css, and javascripty files.  Additionally, I created a process notes file which gives a slightly more in-depth walk-through of
 my process in implementing the form validation logic.
 
 <br>
 
-## What are the key features of the Form Validation Study?
+## What are the key features of the Client-Side Form Validation Study?
 Since this study is ongoing, basic functionalities are covered first and more advanced features are added or will be added in the future.  For a complete list of current and future changes, see below:
 
 | **Features:**                            | **Feature Notes:**                             |
