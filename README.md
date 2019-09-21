@@ -47,7 +47,21 @@ In the study example, you have a basic form with a user name, password, and a su
 ```
 <br>
 
-### STEP 1:
+After you assign your elements, you add your error checking to the event listener.  For the purpose of this study, we'll just do a few including name and password inclusion and length checks.
+The way this is set this up, we'll have a blank messages array that, should there be an applicable error, will be displayed on the screen.
+```JavaScript
+    form.addEventListener('submit', function(event) {                        
+        let messages = [];                                                   // "messages" storing all the error messages for the form validation.
+        ...
+        ...
+        ...
+    });
+```
+
+<br>
+
+
+
 
 
 <br>
