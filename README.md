@@ -24,7 +24,11 @@ Form validation is used for user submission sections contact forms and any place
 need to have a name and password entered to have the login register successfully.  Form validation is essential make sure data submitted is correct, ensure the user has adequate 
 protection by having name and passwords of a certian length, type, etc, and lastly for the saftey and security of your own application. 
 
-There are two different ways to validate form data: *client-side* and *server-side*.  **Client-side validation** in the browser before data is submitted to the server and has a few benefits, including quicker response and is more user-friendly.  **Server-side validation**, which occurs after the data has been submitted to the server.  Although server-side validation isnt as user friendly due to the delay in form submission, data can be validated and sanitized.  
+There are two different ways to validate form data: *client-side* and *server-side*.  
+
+* **Client-side validation** in the browser before data is submitted to the server and has a few benefits, including quicker response and is more user-friendly.  
+
+* **Server-side validation**, which occurs after the data has been submitted to the server.  Although server-side validation isnt as user friendly due to the delay in form submission, data can be validated and sanitized.  
 
 A good approach is to have a two-layer form data validation where basic error checking can be done on the client side and more complex validation done on the server side to cover all your bases.
 
