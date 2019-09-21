@@ -1,6 +1,6 @@
 # Client-Side Form Validation Study
 
-See it Live: https://john-azzaro.github.io/Study-Form-Data-Validation/
+See it Live: https://john-azzaro.github.io/Study-Client-Side-Form-Data-Validation/
 
 <br>
 
@@ -45,7 +45,9 @@ In the study example, you have a basic form with a user name, password, and a su
          <button type="submit">Submit</button>
     </form>
 ```
+<br>
 
+### STEP 1:
 
 
 <br>
