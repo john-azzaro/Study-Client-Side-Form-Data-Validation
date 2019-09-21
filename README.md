@@ -90,6 +90,8 @@ the error message element for the user to see.
     });
 ```
 
+For additional error checking, all you need to do is add additional if statements to the event listener!
+
 <br>
 
 ## Does Form Validation Study feature commentary?
