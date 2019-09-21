@@ -47,11 +47,10 @@ In the study example, you have a basic form with a user name, password, and a su
 ```
 <br>
 
-After you assign your elements, you add your error checking to the event listener.  For the purpose of this study, we'll just do a few including name and password inclusion and length checks.
-The way this is set this up, we'll have a blank messages array that, should there be an applicable error, will be displayed on the screen.
+After you assign your elements, you add your error checking to an event listener.  For the purpose of this study, we'll just do a few including name and password inclusion and length checks. The way this is set this up, we'll have a blank messages array that, should there be an applicable error, will be displayed on the screen.
 ```JavaScript
     form.addEventListener('submit', function(event) {                        
-        let messages = [];                                                   // "messages" storing all the error messages for the form validation.
+        let messages = [];             
         ...
         ...
         ...
@@ -60,9 +59,36 @@ The way this is set this up, we'll have a blank messages array that, should ther
 
 <br>
 
+Now that we have a means of storing our messages, we need to first cancel out the form from submitting by adding an
+``` event.preventDefault()```.  Next, we need to check to see if we have an error messages.  And lastly, we want to make sure that if there are multiple messaged, they can be joined in a legible way.  So whats happening here is that we want to prevent the form from submitting AND send the errors that we do have to the messages variable so that it can be displayed to the user in a way that we can clearly read it.
+```JavaScript
+    form.addEventListener('submit', function(event) {   
+        let messages = [];  
+        if (messages.length > 0) {                               // if there are any messages...
+            event.preventDefault()                               // prevent defualt form submission...
+            errorElement.innerText = messages.join(', ')         // and join multiple messages together.
+        }
+        ...
+        ...
+    });
+```
+<br>
 
+Now suppose you want to make sure that the user submits a name.  A good way to do this is to check whether or not the field is empty.  So you insert a *if* statement and insert your logic.  In this case, we want to check that if either the value of the name (i.e. the user input value of "name") is empty OR the value is null, push the maessage "Name is required" to
+the error message element for the user to see.
 
-
+```JavaScript
+    form.addEventListener('submit', function(event) {   
+        let messages = [];  
+        if (name.value === '' || name.value == null) {          // check to see if the name name is blank or null
+            messages.push('Name is required');                  // and push to messages so the user can see the error.
+        }
+        if (messages.length > 0) { 
+            event.preventDefault()  
+            errorElement.innerText = messages.join(', ') 
+        }
+    });
+```
 
 <br>
 
