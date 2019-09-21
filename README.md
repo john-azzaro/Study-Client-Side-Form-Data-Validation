@@ -11,10 +11,10 @@ as a length minimum/limit, whether or not a password or name is provided and, if
 
 Here's some questions covered in the study:
 
-* [Why use form data validation?](#Screenshots)
-* [How do you implement form data validation?](#Screenshots)
-* [Does Form Validation Study feature commentary?](#Does-Form-Validation-Study-feature-commentary)
-* [What are the key features of the Form Validation Study?](#What-are-the-key-features-of-the-Form-Validation-Study)
+* [Why use form data validation?](#Why-use-form-data-validation)
+* [How do you implement client-side form data validation?](#How-do-you-implement-client-side-form-data-validation)
+* [Does Client-Side Form Validation Study feature commentary?](#Does-Client-Side-Form-Validation-Study-feature-commentary)
+* [What are the key features of the Client-Side Form Validation Study?](#What-are-the-key-features-of-the-Client-Side-Form-Validation-Study)
 * [Screenshots](#Screenshots)
 
 <br>
